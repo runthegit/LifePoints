@@ -8,74 +8,104 @@
 
     <Button
         android:id="@+id/btnPhysical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:text="Physical"
-        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="61dp" />
 
     <Button
         android:id="@+id/btnDiet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Diet"
-        app:layout_constraintTop_toBottomOf="@+id/btnPhysical"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPhysical" />
 
     <Button
         android:id="@+id/btnMental"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Mental"
-        app:layout_constraintTop_toBottomOf="@+id/btnDiet"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiet" />
 
     <Button
         android:id="@+id/btnCleaning"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Cleaning "
-        app:layout_constraintTop_toBottomOf="@+id/btnMental"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMental" />
 
     <Button
         android:id="@+id/btnBreaking"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Breaking Bad Habits"
-        app:layout_constraintTop_toBottomOf="@+id/btnCleaning"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCleaning" />
 
     <Button
         android:id="@+id/btnReward"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="49dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Reward"
-        app:layout_constraintTop_toBottomOf="@+id/btnBreaking"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBreaking" />
 
     <TextView
         android:id="@+id/lblSelect"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_height="45dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
@@ -90,6 +120,14 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/btnPhysical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
 </android.support.constraint.ConstraintLayout>
