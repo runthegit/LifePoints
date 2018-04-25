@@ -24,7 +24,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".DietActivity"></activity>
+        <activity android:name=".DietActivity" />
+        <activity android:name=".PhysicalActivity" />
+        <activity android:name=".RewardActivity" />
+        <activity android:name=".BadHabitActivity" />
+        <activity android:name=".CleaningActivity" />
+        <activity android:name=".MentalActivity"></activity>
     </application>
 
 </manifest>
