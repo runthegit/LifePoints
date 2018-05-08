@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_physical"
+            android:icon="@drawable/ic_physical"
+            android:title="Physical" />
+
+        <item
+            android:id="@+id/nav_mental"
+            android:icon="@drawable/ic_mental"
+            android:title="Mental" />
+
+        <item
+            android:id="@+id/nav_cleaning"
+            android:icon="@drawable/ic_cleaning"
+            android:title="Cleaning" />
+
+        <item
+            android:id="@+id/nav_diet"
+            android:icon="@drawable/ic_diet"
+            android:title="Diet" />
+
+        <item
+            android:id="@+id/nav_bad"
+            android:icon="@drawable/ic_bad_habits"
+            android:title="Breaking Bad" />
+
+        <item
+            android:id="@+id/nav_reward"
+            android:icon="@drawable/ic_reward_bank"
+            android:title="Reward Bank" />
+
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_main_menu"
+            android:title="Main Menu" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Sign Out" />
+    </group>
+
+</menu>
