@@ -11,24 +11,46 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".DietActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
 
+        <activity
+            android:name=".PhysicalActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
 
-        <activity android:name=".DietActivity" />
-        <activity android:name=".PhysicalActivity" />
-        <activity android:name=".RewardActivity" />
-        <activity android:name=".BadHabitActivity" />
-        <activity android:name=".CleaningActivity" />
-        <activity android:name=".MentalActivity"/>
+        <activity
+            android:name=".RewardActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".BadHabitActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".CleaningActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".MentalActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
     </application>
 
 </manifest>

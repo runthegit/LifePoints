@@ -11,7 +11,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.view.MenuItem;
 import android.content.Intent;
-import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -46,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+// This lets the user go to the corresponding activity after clicking the menu item from the navbar.
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent i = new Intent(getApplicationContext(),PhysicalActivity.class);
             startActivity(i);
             setContentView(R.layout.activity_physical);
-
         }
         if (id == R.id.nav_bad){
             Intent i = new Intent(getApplicationContext(),BadHabitActivity.class);
@@ -75,6 +74,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             Intent i = new Intent(getApplicationContext(),CleaningActivity.class);
             startActivity(i);
             setContentView(R.layout.activity_cleaning);
+        }
+        if (id == R.id.nav_reward){
+            Intent i = new Intent(getApplicationContext(),RewardActivity.class);
+            startActivity(i);
+            setContentView(R.layout.activity_reward);
+        }
+        if (id == R.id.nav_main){
+            Intent i = new Intent(getApplicationContext(),MainActivity.class);
+            startActivity(i);
+            setContentView(R.layout.activity_main);
         }
         return false;
     }

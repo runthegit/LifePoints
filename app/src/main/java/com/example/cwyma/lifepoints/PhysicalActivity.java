@@ -51,19 +51,34 @@ public class PhysicalActivity extends AppCompatActivity implements NavigationVie
         int id = item.getItemId();
 
         if (id == R.id.nav_physical){
-            Toast.makeText(this, "This is physical", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(getApplicationContext(),PhysicalActivity.class);
+            startActivity(i);
+            setContentView(R.layout.activity_physical);
         }
         if (id == R.id.nav_bad){
-            Toast.makeText(this, "This is bad", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(getApplicationContext(),BadHabitActivity.class);
+            startActivity(i);
+            setContentView(R.layout.activity_bad_habit);
         }
         if (id == R.id.nav_diet){
-            Toast.makeText(this, "This is diet", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(getApplicationContext(),DietActivity.class);
+            startActivity(i);
+            setContentView(R.layout.activity_diet);
         }
         if (id == R.id.nav_mental){
-            Toast.makeText(this, "This is mental", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(getApplicationContext(),MentalActivity.class);
+            startActivity(i);
+            setContentView(R.layout.activity_mental);
         }
         if (id == R.id.nav_cleaning){
-            Toast.makeText(this, "This is cleaning", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(getApplicationContext(),CleaningActivity.class);
+            startActivity(i);
+            setContentView(R.layout.activity_cleaning);
+        }
+        if (id == R.id.nav_reward){
+            Intent i = new Intent(getApplicationContext(),RewardActivity.class);
+            startActivity(i);
+            setContentView(R.layout.activity_reward);
         }
         if (id == R.id.nav_main){
             Intent i = new Intent(getApplicationContext(),MainActivity.class);
