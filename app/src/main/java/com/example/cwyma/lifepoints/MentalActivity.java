@@ -1,15 +1,19 @@
 package com.example.cwyma.lifepoints;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MentalActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -42,6 +46,7 @@ public class MentalActivity extends AppCompatActivity implements NavigationView.
         }
     }
 
+    // This lets the user go to the corresponding activity after clicking the menu item from the navbar.
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
@@ -80,6 +85,29 @@ public class MentalActivity extends AppCompatActivity implements NavigationView.
             Intent i = new Intent(getApplicationContext(),MainActivity.class);
             startActivity(i);
             setContentView(R.layout.activity_main);
+        }
+        if (id == R.id.nav_logout){
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(MentalActivity.this);
+            builder.setMessage("Are you sure you want to Sign Out?")
+                    .setPositiveButton("Yes!", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            // Signs out!
+                            FirebaseAuth.getInstance().signOut();
+                            finish();
+                            startActivity(new Intent(MentalActivity.this, SignInActivity.class));
+                        }
+                    })
+                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            // User cancelled the dialog
+                            dialog.cancel();
+                        }
+                    });
+            // Create the AlertDialog object and return it
+            AlertDialog alertDialog = builder.create();
+            alertDialog.show();
+
         }
         return false;
     }

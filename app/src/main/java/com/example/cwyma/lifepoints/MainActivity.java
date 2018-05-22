@@ -1,10 +1,13 @@
 package com.example.cwyma.lifepoints;
 
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,8 +15,10 @@ import android.support.v4.view.GravityCompat;
 import android.view.MenuItem;
 import android.content.Intent;
 
+import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+public class MainActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
 
     @Override
@@ -31,8 +36,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
         NavigationView navigationView =(NavigationView)findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+      //  int id = item.getItemId();
+
+     //   LifePointsApp lPointsApp = new LifePointsApp();
+     //   lPointsApp.onNavigationItemSelected(MenuItem item);
+
+
 
     }
 
@@ -85,6 +97,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(i);
             setContentView(R.layout.activity_main);
         }
+        if (id == R.id.nav_logout){
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("Are you sure you want to Sign Out?")
+                        .setPositiveButton("Yes!", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // Signs out!
+                                FirebaseAuth.getInstance().signOut();
+                                finish();
+                                startActivity(new Intent(MainActivity.this, SignInActivity.class));
+                            }
+                        })
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                // User cancelled the dialog
+                                dialog.cancel();
+                            }
+                        });
+                // Create the AlertDialog object and return it
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+
+        }
+
         return false;
     }
+
+
 }
