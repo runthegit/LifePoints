@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.cwyma.lifepoints.MainActivity"
+    tools:context="com.cwyman.cwyma.taskreward.MainActivity"
     tools:openDrawer="start"
     >
 
@@ -36,6 +36,42 @@
         tools:context=".PhysicalActivity">
 
         <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Each set awards 2 mins. reward time"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Daily Max Limit of 20 Sets"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31"
+            app:layout_constraintVertical_bias="0.078" />
+
+        <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,193 +84,177 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
-        android:text="Push ups"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView28"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/lblPushups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="48dp"
+            android:text="Push ups"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/lblCrunches"
+            app:layout_constraintEnd_toStartOf="@+id/txtPushUpNum"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
-        android:text="Crunches"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView29"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/lblCrunches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="44dp"
+            android:text="Crunches"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/lblSquats"
+            app:layout_constraintEnd_toStartOf="@+id/txtCrunchNum"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
-        android:text="Squats"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView30"
-        app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/lblSquats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="44dp"
+            android:text="Squats"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/lblJump"
+            app:layout_constraintEnd_toStartOf="@+id/txtSquatNum"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginStart="36dp"
-        android:text="Jump rope"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView31"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="75dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editText4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
-        app:layout_constraintStart_toEndOf="@+id/textView27" />
-
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Add Amount"
-        app:layout_constraintBottom_toTopOf="@+id/button18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.583"
-        app:layout_constraintStart_toEndOf="@+id/editText3" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="69dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editText5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toEndOf="@+id/textView28" />
-
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Add Amount"
-        app:layout_constraintBottom_toTopOf="@+id/button19"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.629"
-        app:layout_constraintStart_toEndOf="@+id/editText4" />
-
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="74dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="8dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editText6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
-        app:layout_constraintStart_toEndOf="@+id/textView29" />
-
-    <Button
-        android:id="@+id/button19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginStart="8dp"
-        android:text="add amount"
-        app:layout_constraintBottom_toTopOf="@+id/button20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/editText5" />
+        <TextView
+            android:id="@+id/lblJump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="28dp"
+            android:text="Jump rope"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView31"
+            app:layout_constraintEnd_toStartOf="@+id/txtJumpRopeNum"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:id="@+id/editText6"
-            android:layout_width="78dp"
+            android:id="@+id/txtPushUpNum"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="68dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="68dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="272dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="20dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView30"
+            android:maxLength="2"
+            app:layout_constraintBottom_toTopOf="@+id/txtCrunchNum"
+            app:layout_constraintEnd_toStartOf="@+id/btnPhysicalPushUp" />
+
+        <Button
+            android:id="@+id/btnPhysicalPushUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="20dp"
+            android:text="Add Set(s)"
+            app:layout_constraintBottom_toTopOf="@+id/btnPhysicalCrunch"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/txtCrunchNum"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toTopOf="@+id/txtSquatNum"
+            app:layout_constraintEnd_toStartOf="@+id/btnPhysicalCrunch" />
+
+        <Button
+            android:id="@+id/btnPhysicalCrunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="24dp"
+            android:text="Add Set(s)"
+            app:layout_constraintBottom_toTopOf="@+id/btnPhysicalSquat"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/txtSquatNum"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="24dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toTopOf="@+id/txtJumpRopeNum"
+            app:layout_constraintEnd_toStartOf="@+id/btnPhysicalSquat" />
+
+        <Button
+            android:id="@+id/btnPhysicalSquat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="16dp"
+            android:text="add set(s)"
+            app:layout_constraintBottom_toTopOf="@+id/btnPhysicalJump"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/txtJumpRopeNum"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="232dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintEnd_toStartOf="@+id/btnPhysicalJump"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <Button
-            android:id="@+id/button20"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnPhysicalJump"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="272dp"
-            android:text="add amount"
+            android:layout_marginTop="232dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:text="add set(s)"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.352"
-            app:layout_constraintStart_toEndOf="@+id/editText6"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <TextView
             android:id="@+id/textView31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="40dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="40dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="52dp"
-            android:text="Each set of 10 awards 2 mins."
-            android:textSize="22sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:text="1 set = 10 reps."
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintHorizontal_bias="0.582"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText6" />
+            app:layout_constraintTop_toBottomOf="@+id/txtJumpRopeNum" />
 
     </android.support.constraint.ConstraintLayout>
 

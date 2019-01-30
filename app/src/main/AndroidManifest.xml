@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cwyma.lifepoints">
+    package="com.example.cwyma.taskreward">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SignInActivity">
+            android:name="com.example.cwyma.taskreward.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,34 +18,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name="com.example.cwyma.taskreward.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
             <!--  <intent-filter>
                    <action android:name="android.intent.action.MAIN" />
 
                    <category android:name="android.intent.category.LAUNCHER" />
                </intent-filter> -->
-        </activity>
+
         <activity
-            android:name=".DietActivity"
+            android:name="com.example.cwyma.taskreward.DietActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".PhysicalActivity"
+            android:name="com.example.cwyma.taskreward.PhysicalActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".RewardActivity"
+            android:name="com.example.cwyma.taskreward.RewardActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".BadHabitActivity"
+            android:name="com.example.cwyma.taskreward.BadHabitActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".CleaningActivity"
+            android:name="com.example.cwyma.taskreward.CleaningActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MentalActivity"
+            android:name="com.example.cwyma.taskreward.MentalActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <activity android:name=".CreateAcctActivity"></activity>
+        <activity android:name="com.example.cwyma.taskreward.CreateAcctActivity"></activity>
     </application>
 
 </manifest>

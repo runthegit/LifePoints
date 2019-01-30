@@ -28,7 +28,7 @@
         <item
             android:id="@+id/nav_bad"
             android:icon="@drawable/ic_bad_habits"
-            android:title="Breaking Bad" />
+            android:title="Bad Habits" />
 
         <item
             android:id="@+id/nav_reward"

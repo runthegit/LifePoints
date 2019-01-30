@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.cwyma.lifepoints.DietActivity"
+    tools:context="com.cwyman.taskreward.taskreward.DietActivity"
     tools:openDrawer="start"
     >
 
@@ -50,49 +50,49 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/lblRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="52dp"
+        android:text="Read/30 mins."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblMeditate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblMeditate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
-        android:text="Read"
+        android:text="Meditate/10 mins."
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintBottom_toTopOf="@+id/lblCoding"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
-        android:text="Meditate"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/lblCoding"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_marginBottom="48dp"
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
-        android:text="Coding Practice"
+        android:text="Coding/30 mins."
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintBottom_toTopOf="@+id/lblStudy"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/lblStudy"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="376dp"
-        android:text="Study"
+        android:layout_height="33dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="388dp"
+        android:text="Study/30 mins."
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -105,90 +105,67 @@
 
     <Button
         android:id="@+id/btnMentalMeditate"
-        android:layout_width="wrap_content"
+        android:layout_width="87dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="116dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="116dp"
-        android:text="Start Timer!"
+        android:layout_marginBottom="20dp"
+        android:text="Yep!"
         app:layout_constraintBottom_toTopOf="@+id/btnMentalCoding"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView15" />
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/lblMeditate" />
 
     <Button
         android:id="@+id/btnMentalCoding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:text="Start Timer!"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Yep!"
         app:layout_constraintBottom_toTopOf="@+id/btnMentalStudy"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
-        app:layout_constraintStart_toEndOf="@+id/textView16" />
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toEndOf="@+id/lblCoding" />
 
     <Button
         android:id="@+id/btnMentalStudy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="356dp"
-        android:text="Start Timer!"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Yep!"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.77"
-        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toEndOf="@+id/lblStudy"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnMentalAddPages"
-        android:layout_width="120dp"
+        android:id="@+id/btnMentalRead"
+        android:layout_width="86dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:text="Add Pages"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Yep!"
         app:layout_constraintBottom_toTopOf="@+id/btnMentalMeditate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.788"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toEndOf="@+id/lblRead"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.965" />
 
-    <EditText
-        android:id="@+id/editTextPagesRead"
-        android:layout_width="65dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="148dp"
-        android:ems="10"
-        android:hint="enter"
-        android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="164dp"
-        android:text="pages"
-        app:layout_constraintStart_toEndOf="@+id/editTextPagesRead"
-        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
 
 <android.support.design.widget.NavigationView

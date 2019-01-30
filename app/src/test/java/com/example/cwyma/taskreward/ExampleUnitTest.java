@@ -1,4 +1,4 @@
-package com.example.cwyma.lifepoints;
+package com.cwyman.cwyma.taskreward;
 
 import org.junit.Test;
 

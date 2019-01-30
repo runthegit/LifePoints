@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.cwyma.lifepoints.BadHabitActivity"
+    tools:context="com.cwyman.cwyma.taskreward.BadHabitActivity"
     tools:openDrawer="start"
     >
 
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/lblSmoke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
@@ -71,11 +71,11 @@
         android:layout_marginStart="32dp"
         android:text="Smoking"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintBottom_toTopOf="@+id/lblAlcohol"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/lblAlcohol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
@@ -83,11 +83,11 @@
         android:layout_marginStart="32dp"
         android:text="Alcohol"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintBottom_toTopOf="@+id/lblSoda"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/lblSoda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
@@ -95,11 +95,11 @@
         android:layout_marginStart="32dp"
         android:text="Soda"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintBottom_toTopOf="@+id/lblChips"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/lblChips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -116,31 +116,31 @@
         android:id="@+id/btnBadSmoke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:text="Doh!"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="DOH!"
         app:layout_constraintBottom_toTopOf="@+id/btnBadAl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toEndOf="@+id/textView23" />
+        app:layout_constraintStart_toEndOf="@+id/lblSmoke" />
 
     <Button
         android:id="@+id/btnBadAl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:text="Doh!"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="DOH!"
         app:layout_constraintBottom_toTopOf="@+id/btnBadSoda"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.641"
-        app:layout_constraintStart_toEndOf="@+id/textView24" />
+        app:layout_constraintStart_toEndOf="@+id/lblAlcohol" />
 
     <Button
         android:id="@+id/btnBadSoda"
@@ -155,7 +155,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnBadChip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.674"
-        app:layout_constraintStart_toEndOf="@+id/textView25" />
+        app:layout_constraintStart_toEndOf="@+id/lblSoda" />
 
     <Button
         android:id="@+id/btnBadChip"
@@ -167,7 +167,7 @@
         android:text="DOH!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.663"
-        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintStart_toEndOf="@+id/lblChips"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
