@@ -1,4 +1,4 @@
-package com.cwyman.cwyma.taskreward;
+package com.cwyman.taskreward.taskreward;
 
 import org.junit.Test;
 

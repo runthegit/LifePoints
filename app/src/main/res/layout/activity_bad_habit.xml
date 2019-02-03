@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.cwyman.cwyma.taskreward.BadHabitActivity"
+    tools:context="com.cwyman.taskreward.taskreward.BadHabitActivity"
     tools:openDrawer="start"
     >
 
@@ -66,9 +66,9 @@
         android:id="@+id/lblSmoke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
         android:layout_marginBottom="48dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
         android:text="Smoking"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/lblAlcohol"
@@ -78,9 +78,9 @@
         android:id="@+id/lblAlcohol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
         android:layout_marginBottom="48dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
         android:text="Alcohol"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/lblSoda"
@@ -90,9 +90,9 @@
         android:id="@+id/lblSoda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
         android:layout_marginBottom="44dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
         android:text="Soda"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/lblChips"
@@ -102,15 +102,16 @@
         android:id="@+id/lblChips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginTop="312dp"
+        android:layout_marginBottom="8dp"
         android:text="Chips"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.684" />
+        app:layout_constraintVertical_bias="0.687" />
 
     <Button
         android:id="@+id/btnBadSmoke"
@@ -120,11 +121,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="20dp"
         android:text="DOH!"
         app:layout_constraintBottom_toTopOf="@+id/btnBadAl"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintStart_toEndOf="@+id/lblSmoke" />
 
     <Button
@@ -135,11 +136,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="28dp"
         android:text="DOH!"
         app:layout_constraintBottom_toTopOf="@+id/btnBadSoda"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toEndOf="@+id/lblAlcohol" />
 
     <Button
@@ -161,12 +162,12 @@
         android:id="@+id/btnBadChip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="364dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="8dp"
         android:text="DOH!"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toEndOf="@+id/lblChips"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -174,11 +175,11 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="28dp"
-        android:layout_marginEnd="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="440dp"
+        android:layout_marginEnd="40dp"
         android:text='Each "DOH!" decreases your reward bank'
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,4 +1,4 @@
-package com.example.cwyma.taskreward;
+package com.cwyman.taskreward.taskreward;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -567,7 +567,11 @@ public class PhysicalActivity extends AppCompatActivity implements NavigationVie
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            String intentUid = getIntent().getExtras().getString("intentUserId");
+            Intent intent = new Intent(PhysicalActivity.this, MainActivity.class);
+            intent.putExtra("intentUserId", intentUid);
+            startActivity(intent);
+            setContentView(R.layout.activity_main);
         }
     }
 //-------------------------------------------------------------------------------------------

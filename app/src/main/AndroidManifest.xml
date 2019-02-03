@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cwyma.taskreward">
+    package="com.cwyman.taskreward.taskreward">
+
 
     <application
         android:allowBackup="true"
@@ -10,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.cwyma.taskreward.SignInActivity">
+            android:name="com.cwyman.taskreward.taskreward.SignInActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,8 +20,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.cwyma.taskreward.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:name="com.cwyman.taskreward.taskreward.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
             <!--  <intent-filter>
                    <action android:name="android.intent.action.MAIN" />
 
@@ -27,25 +30,33 @@
                </intent-filter> -->
 
         <activity
-            android:name="com.example.cwyma.taskreward.DietActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name="com.cwyman.taskreward.taskreward.DietActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.cwyma.taskreward.PhysicalActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name="com.cwyman.taskreward.taskreward.PhysicalActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.cwyma.taskreward.RewardActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name="com.cwyman.taskreward.taskreward.RewardActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.cwyma.taskreward.BadHabitActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name="com.cwyman.taskreward.taskreward.BadHabitActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.cwyma.taskreward.CleaningActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name="com.cwyman.taskreward.taskreward.CleaningActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.cwyma.taskreward.MentalActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name="com.cwyman.taskreward.taskreward.MentalActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
 
-        <activity android:name="com.example.cwyma.taskreward.CreateAcctActivity"></activity>
+        <activity
+            android:name="com.cwyman.taskreward.taskreward.CreateAcctActivity"
+            android:screenOrientation="portrait" ></activity>
     </application>
 
 </manifest>

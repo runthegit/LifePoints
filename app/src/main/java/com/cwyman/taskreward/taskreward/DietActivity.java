@@ -1,4 +1,4 @@
-package com.example.cwyma.taskreward;
+package com.cwyman.taskreward.taskreward;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -329,7 +329,11 @@ public class DietActivity extends AppCompatActivity implements NavigationView.On
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            String intentUid = getIntent().getExtras().getString("intentUserId");
+            Intent intent = new Intent(DietActivity.this, MainActivity.class);
+            intent.putExtra("intentUserId", intentUid);
+            startActivity(intent);
+            setContentView(R.layout.activity_main);
         }
     }
 //----------------------------------------------------------------------

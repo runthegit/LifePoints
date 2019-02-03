@@ -1,4 +1,4 @@
-package com.cwyman.cwyma.taskreward;
+package com.cwyman.taskreward.taskreward;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
